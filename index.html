@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Responsive portfolio website - Bedimcode</title>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">
+            Denis <span>Studenko</span>
+         </a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#home" class="nav__link active-link">Home</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#about" class="nav__link">About</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#services" class="nav__link">Services</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#projects" class="nav__link">Projects</a>
+               </li>
+
+               <li class="nav__item">
+                  <a href="#contact" class="nav__link">Contact</a>
+               </li>
+            </ul>
+
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <div class="home__content">
+               <div class="home__data">
+                  <h3 class="home__subtitle">
+                     Hello, <span>I’m</span>
+                  </h3>
+
+                  <h1 class="home__title">Denis Studenko</h1>
+
+                  <h3 class="home__education">Full-Stack Developer</h3>
+
+                  <p class="home__description">
+                     Web Dev Wizard. Crafting a digital world accessible to all.
+                  </p>
+
+                  <a href="./assets/img/my-cv.pdf" download class="button">Download CV</a>
+               </div>
+
+               <div class="home__social">
+                  <a href="https://github.com/" target="_blank" class="home__social-link">
+                     <i class="ri-github-fill"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
+                     <i class="ri-linkedin-box-line"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="home__image">
+               <svg class="home__blob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="maskBlob" mask-type="alpha">
+                     <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z" />
+                  </mask>
+                  <g mask="url(#maskBlob)">
+                     <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157
+                        170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157
+                        447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426
+                        587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843
+                        438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z" />
+
+                     <rect x="37" width="476" height="630" fill="url(#pattern0)" />
+                  </g>
+
+                  <rect x="37" width="476" height="300" fill="url(#pattern1)" />
+
+                  <defs>
+                     <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
+                     </pattern>
+
+                     <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
+                     </pattern>
+
+                     <!-- Insert your profile (recommended size: 640 x 940) -->
+                     <image class="home__img" id="imageBlob" width="640" height="925" href="assets/img/perfil.png" />
+                  </defs>
+               </svg>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__container">
+            <div class="about__data">
+
+               <h2 class="about__title">
+                  About <span>Me</spa>
+               </h2>
+
+               <p class="about__description">
+                  Hi, I’m Denis Studenko, a software engineer driven by a passion for solving real-world problems
+                  through technology. My journey from sheet metal fabrication to full-stack development has equipped me
+                  with a unique blend of hands-on experience and technical expertise.
+                  As a graduate of App Academy, I specialize in Python, Flask, JavaScript, React, and backend REST API
+                  design. I’m committed to building efficient, impactful software and am eager to contribute to
+                  innovative teams that push the boundaries of technology.
+
+
+               </p>
+
+               <a href="#contact" class="button">Contact Me</a>
+            </div>
+
+            <!-- <div class="about__image">
+               <svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="maskBorder" mask-type="alpha">
+                     <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157
+                        171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157
+                        448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609
+                        270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843
+                        439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black" />
+                  </mask>
+                  <g mask="url(#maskBorder)">
+                     <rect x="37" width="476" height="630" fill="url(#pattern2)" />
+
+                     <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157
+                        192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285
+                        580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641
+                        40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843
+                        175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black"
+                        stroke-width="10" />
+                  </g>
+
+                  <rect x="37" width="476" height="300" fill="url(#pattern3)" />
+
+                  <defs>
+                     <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
+                     </pattern>
+
+                     <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
+                     </pattern>
+                     <image class="about__img" id="imageBorder" width="640" height="940" href="assets/img/perfil.png" />
+                  </defs>
+               </svg>
+            </div> -->
+         </div>
+      </section>
+      <!--==================== SKILLS ====================-->
+      <section class="skills section">
+         <div class="skills__container container grid">
+            <div class="skills__data">
+
+               <h2 class="section__title">
+                  My <span>Skills</span>
+               </h2>
+
+               <p class="skills__description">
+                  Discover the range of skills I possess and utilize, enabling me to successfully develop projects
+                  tailored to your needs.
+               </p>
+
+               <a href="#projects" class="button">See Projects</a>
+            </div>
+
+            <div class="skills__content">
+               <ol class="skills__group">
+                  <li class="skills__item">HTML & CSS</li>
+                  <li class="skills__item">JavaScript</li>
+                  <li class="skills__item">Python</li>
+               </ol>
+
+               <ol class="skills__group" start="5">
+                  <li class="skills__item">React/Redux</li>
+                  <li class="skills__item">Flask</li>
+                  <li class="skills__item"> Git & GitHub</li>
+               </ol>
+            </div>
+         </div>
+      </section>
+
+     <!--==================== SERVICES ====================-->
+<section class="services section" id="services">
+
+   <h2 class="section__title">
+      My <span>Services</span>
+   </h2>
+
+   <div class="services__container container grid">
+      <article class="services__card">
+         <!-- <i class="services__icon"></i> -->
+         <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 24 24">
+            <path fill="#0063cc"
+               d="M3 7V5.616q0-.691.463-1.153T4.615 4h14.77q.69 0 1.152.463T21 5.616V7h-1V5.616q0-.27-.173-.443T19.385 5H4.615q-.269 0-.442.173T4 5.616V7zm6 13v-2H4.616q-.691 0-1.153-.462T3 16.384V15h1v1.385q0 .269.173.442t.443.173h14.769q.269 0 .442-.173t.173-.443V15h1v1.385q0 .69-.462 1.152T19.385 18H15v2zm-4.584-9l2.6-2.6l-.708-.708L3 11l3.308 3.308l.708-.708zm15.169 0l-2.6 2.6l.707.708L21 11l-3.308-3.308l-.707.708z" />
+         </svg>
+
+         <h2 class="services__title">Web Development</h2>
+
+         <p class="services__description">
+            I specialize in building custom web applications using the latest technologies and industry-standard libraries to ensure robust and scalable solutions.
+         </p>
+      </article>
+
+      <article class="services__card">
+         <!-- <i class="services__icon"></i> -->
+         <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 48 48">
+            <path fill="none" stroke="#0063cc" stroke-linecap="round" stroke-linejoin="round"
+               d="M15.737 12.536L14.524 13.6l-3.686-1.09s-.978.041-1.276.342s-1.967 2.8-1.967 2.8s-.522 1.175-.106 1.74s2.948 3.042 2.948 3.042l-.075 1.626l-3.9 1.832a1.39 1.39 0 0 0-.594 1.094a12.4 12.4 0 0 0 .566 3.514a2.5 2.5 0 0 0 .771.861a3.9 3.9 0 0 0 1.542.506c.669.001 2.78.083 2.78.083l.782 1.292l-1.612 3.208s-.42 1.308-.113 1.704s2.816 2.498 2.816 2.498a1.435 1.435 0 0 0 1.809.19c1.047-.634 3.316-2.24 3.316-2.24l1.386.63l.835 3.336s.286 1.123 1.043 1.271s4.12.08 4.12.08a2.18 2.18 0 0 0 1.228-1.328c.24-.938.881-3.36.881-3.36l1.437-.564c1.548 1.351 4.267 2.528 4.65 2.231c.728-.44 2.722-2.068 2.722-2.068a1.56 1.56 0 0 0 .405-2.168c-.782-1.405-1.617-3.205-1.617-3.205l.842-1.369l3.824-.226c2.368-.04 1.758-3.035 1.825-5.127c-.217-1.218-2.569-1.757-4.27-2.57l-.231-1.524l3.132-3.211a2.08 2.08 0 0 0-.325-1.695c-.59-.947-1.333-2.384-1.333-2.384s-.341-.895-2.063-.563a35 35 0 0 0-3.402.864l-1.266-.88l.347-3.898a1.34 1.34 0 0 0-.768-1.565c-1.054-.424-3.157-1.156-3.157-1.156a1.77 1.77 0 0 0-1.848.65c-.602.959-2.04 3.094-2.04 3.094l-1.58.015l-1.97-2.993a1.62 1.62 0 0 0-2.072-.757a33 33 0 0 0-3.142 1.145s-.782.067-.68 1.794s.3 3.435.3 3.435Z" />
+            <circle cx="24" cy="24" r="21.5" fill="none" stroke="#0063cc" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="24" cy="24" r="9.163" fill="none" stroke="#0063cc" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="24" cy="24" r="5.872" fill="none" stroke="#0063cc" stroke-linecap="round" stroke-linejoin="round" />
+            <circle cx="24" cy="24" r="12.054" fill="none" stroke="#0063cc" stroke-linecap="round" stroke-linejoin="round" />
+         </svg>
+         <h2 class="services__title">Optimization</h2>
+
+         <p class="services__description">
+            I enhance web performance through optimization techniques, ensuring faster load times and improved user experience.
+         </p>
+      </article>
+
+      <article class="services__card">
+         <!-- <i class="services__icon"></i> -->
+         <svg xmlns="http://www.w3.org/2000/svg" width="4em" height="4em" viewBox="0 0 24 24">
+            <path fill="#0063cc"
+               d="M24.01 20.027v2h-24v-2h4v-1a2.006 2.006 0 0 1-2-2v-10a2.006 2.006 0 0 1 2-2h1.996v2H4.01v10h16v-10h-2.004v-2h2.004a2.006 2.006 0 0 1 2 2l-.01 10a1.997 1.997 0 0 1-1.99 2v1Zm-9-6.012l-3-3l-3 3h2v2.01h2v-2.01Zm.995-7.991a4 4 0 1 1-4-4a4 4 0 0 1 4 4m-4.4 2.96v-.56a.8.8 0 0 1-.8-.8v-.4L9.06 5.479a2.96 2.96 0 0 0 2.545 3.505m2.658-1.007a2.977 2.977 0 0 0-1.068-4.704a.797.797 0 0 1-.79.75h-.8v.8a.4.4 0 0 1-.4.4h-.8v.8h2.4a.4.4 0 0 1 .4.4v1.2h.4a.79.79 0 0 1 .658.354" />
+         </svg>
+
+         <h2 class="services__title">Deployment</h2>
+
+         <p class="services__description">
+            I manage the deployment process to ensure your applications are up and running smoothly, using industry-standard practices for security and reliability.
+         </p>
+      </article>
+   </div>
+</section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+
+         <h2 class="section__title">
+            My <span>Projects</span>
+         </h2>
+
+         <div class="projects__container container grid">
+            <article class="projects__card">
+               <img src="assets/img/project-img-1.jpg" alt="projects image" class="projects__img">
+
+               <div class="projects__modal">
+
+                  <h2 class="projects__title">EpicBuy</h2>
+
+                  <a href="https://epicbuy.onrender.com" class="projects__button">
+                     View demo <i class="ri-external-link-line"></i>
+                  </a>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <img src="assets/img/project-img-2.jpg" alt="projects image" class="projects__img">
+
+               <div class="projects__modal">
+                  <h2 class="projects__title">HyperComm</h2>
+
+                  <a href="https://hypercomm.onrender.com" class="projects__button">
+                     View demo <i class="ri-external-link-line"></i>
+                  </a>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <img src="assets/img/project-img-3.jpg" alt="projects image" class="projects__img">
+
+               <div class="projects__modal">
+                  <h2 class="projects__title">EpicStay</h2>
+
+                  <a href="https://epicstay.onrender.com" class="projects__button">
+                     View demo <i class="ri-external-link-line"></i>
+                  </a>
+               </div>
+            </article>
+
+
+         </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+
+
+         <h2 class="section__title">
+            Contact <span>Me</span>
+         </h2>
+
+         <div class="contact__container container grid">
+            <form action="" class="contact__form" id="contact-form">
+               <div class="contact__group">
+                  <input type="text" name="user_name" required placeholder="Enter your name" class="contact__input">
+                  <input type="email" name="user_email" required placeholder="Enter your email" class="contact__input">
+               </div>
+
+               <textarea name="message" required placeholder="Enter your message"
+                  class="contact__input"></textarea>
+
+               <p class="contact__message" id="contact-message"></p>
+
+               <button type="submit" class="button contact__button">
+                  Send Message
+               </button>
+            </form>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container grid">
+
+
+         <div class="footer__social">
+            <a href="https://github.com/" target="_blank" class="home__social-link">
+               <i class="ri-github-fill"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
+               <i class="ri-linkedin-box-line"></i>
+            </a>
+         </div>
+
+         <span class="footer__copy">
+            &#169; Copyright Denis Studenko. All rights reserved
+         </span>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="assets/js/scrollreveal.min.js"></script>
+
+   <!--=============== EMAIL JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>
